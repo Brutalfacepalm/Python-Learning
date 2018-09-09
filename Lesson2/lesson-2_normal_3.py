@@ -4,11 +4,10 @@
 # для получения случайного числа используйте функцию randint() модуля random
 import random
 
-n = int(input('Задайте длину списка: '))
 randlist = []
 
 i = 0
-while i < n:
+while i < random.randint(1,50):
     randlist.append(random.randint(-100,100))
     i += 1
 print (randlist)
