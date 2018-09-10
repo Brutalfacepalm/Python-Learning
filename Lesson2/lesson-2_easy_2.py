@@ -26,8 +26,6 @@ print(randlist,"исходный первый список") # Выводит и
 for r2 in randlist2: # Уделяет из первого списка элемент второго списка
     if randlist.count(r2) > 0:
         randlist.remove(r2)
-    else:
-        pass
 ###
 
 
