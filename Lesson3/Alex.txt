@@ -1,0 +1,4 @@
+name - Alex
+health - 100
+damage - 7
+armor - 1.2
