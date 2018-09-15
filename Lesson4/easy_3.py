@@ -8,7 +8,7 @@ import random
 
 count = 30
 
-randlist = [random.randint(0,100) for _ in range(count)]
+randlist = [random.randint(-100,100) for _ in range(count)]
 print(randlist)
-randlist_new  = [i for i in randlist if i >= 0 and i % 3 == 0 and i % 4 != 0]
+randlist_new  = [i for i in randlist if i >= 0 and not i % 3 and i % 4]
 print(randlist_new)
