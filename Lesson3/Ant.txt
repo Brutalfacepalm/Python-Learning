@@ -1,4 +1,0 @@
-name - Ant
-health - 100
-damage - 8
-armor - 1.2
