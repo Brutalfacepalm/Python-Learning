@@ -14,8 +14,8 @@ name = input('Имя: ')
 surname = input('Фамилия: ')
 email = input('e-mail: ')
 
-re_name = '[A-ZА-Я][а-яa-z]+'
-re_email = '[a-z0-9_]+@[a-z0-9]+\.(com|ru|org)$'
+re_name = '^[A-ZА-Я][а-яa-z]+$'
+re_email = '^[a-z0-9_]+@[a-z0-9]+\.(com|ru|org)$'
 
 if not re.match(re_name, name):
     print('Неверно указано имя')
