@@ -98,7 +98,7 @@ pc_card = pc.card # компьютер получает карточку с чи
 bag = Bag() # в мешок складываются бочонки
 pl_score, pc_score = 0, 0 # карточки еще девственно чисты, зачеркнутых элементов нет
 
-while True: # запускается игра
+while pl_score < 15 and pc_score < 15: # запускается игра
     number = bag.get_numbers() # достается первый бочонок
     player.print_card() # мы видим карточку игрока
     pc.print_card() # мы видим карточку компьютера
@@ -126,4 +126,4 @@ while True: # запускается игра
         else:
             print('Новый бочонок: {} (осталось {})'.format(number, len(bag.bag)))  # показывается бочонок
             choice = input('Неправильный выбор, попробуйте снова (y/n)')
-    winner(pl_score, pc_score)  # проверяется победитель
+winner(pl_score, pc_score)  # проверяется победитель
