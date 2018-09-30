@@ -72,23 +72,17 @@ class Bag: # создаем мешок с бочонками
     def __init__(self):
         self.bag = [i for i in range(1,91)]
 
-    def get_numbers(self): # метод, достающий их мешка случайный бочонок, сообщает что мешок пуст, если бочонков больше нет
-        try:
-            number = self.bag.pop(random.randint(0, len(self.bag)-1))
-        except ValueError:
-            print('Мешок пуст')
+    def get_numbers(self):
+        number = self.bag.pop(random.randint(0, len(self.bag)-1))
         return number
 
 def winner(pl_score, pc_score): # функция проверки наличия победителя
     if pl_score == 15 and pc_score == 15:
         print('У Вас ничья!')
-        quit()
     elif pc_score == 15:
         print('Компьютер выиграл!')
-        quit()
     elif pl_score == 15:
         print('Вы выиграли!')
-        quit()
 
 player = Card('игрок') # игрок
 player_card = player.card # игрок получает карточку с числами
